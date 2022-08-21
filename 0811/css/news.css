@@ -1,0 +1,26 @@
+#newsArea{
+	margin-top: 60px;
+	width: 100%;
+
+}
+
+.newsItem{
+	border: 1px solid #ccc;
+	border-radius: 15px; /* CSS3 邊框倒圓角 */
+	width: 22% ;
+	float: left;
+	height: 300px;
+	margin-left: 2%;
+	margin-bottom: 2%;
+
+}
+
+.newsItem img{
+	width: 100%;
+}
+
+.newsItem p{
+	font-weight: bold;
+	font-size: 23px;
+	text-align: center;
+}

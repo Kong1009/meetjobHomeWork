@@ -1,0 +1,147 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>圖片</title>
+	<!--
+	<style type="text/css">
+		div{
+			width: 250px;
+			height: 250px;
+			border: 2px solid red;
+		}		
+	</style>
+-->
+	<script src="js/jquery.min.js"></script>
+	<link href="css/homework0823.css" rel="stylesheet">
+
+	<script>
+		$(document).ready(function(){
+			$("#menuList li ul").hide();
+			$("#menuList li").hover( /* hover 滑過去時 */
+				function(){
+					$(this).find("ul").slideDown("fast");
+					$(this).find("a:first").addClass("active")
+				}, function(){
+					$(this).find(".submenu").fadeOut("fast");
+					$(this).find("a").removeClass("active");
+				}
+			)
+
+			$("#red").hide();
+			$("#pushme").click(function(){
+				$("#red").slideToggle();
+			});
+
+
+			$("#btn").click(function(){
+				var age = $("#age").val();
+				if (age >= 18 && age <= 50){
+					alert("年齡OK");
+				}else{
+					alert("年齡不符");
+				}
+			})
+
+
+			
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="banner">
+			<div id="logo">
+				<img src="img/logo.png">
+			</div>
+
+			<div id="fb">
+				<img src="img/fb.png">
+			</div>
+
+			<div id="ig">
+				<img src="img/ig.png">
+			</div>
+		</div>
+
+
+		<div id="menu">
+			<ul id="menuList">				
+				<li><a href="#">產品</a>
+					<ul class="submenu">
+						<li><a href="#">3C</a></li>
+						<li><a href="#">家電</a></li>
+						<li><a href="#">汽車</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">重機廠牌</a>
+					<ul class="submenu">
+						<li><a href="#">Aprilia</a></li>
+						<li><a href="#">Kawasaki</a></li>
+						<li><a href="#">YAMAHA</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">汽車廠牌</a>
+					<ul class="submenu">
+						<li><a href="#">Ford</a></li>
+						<li><a href="#">Toyota</a></li>
+						<li><a href="#">Tesla</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">社群</a>
+					<ul class="submenu">
+						<li><a href="#">Line</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Instagram</a></li>
+					</ul>
+				</li>
+
+
+				<li><a href="#">聯絡我們</a></li>
+			</ul>
+		</div>
+
+
+		<!--Content-->
+		<div id="content">
+
+			<div id="bigImage">
+				<img src="img/spy4.png">
+			</div>
+
+			<div id="open_hide">
+				<div id="pushme">
+					<h2>請按我</h2>
+				</div>
+
+				<div id="red" style="width: 100%; background-color: #ff0000" height="200px" align="center">
+					聯成電腦
+					<br>
+					聯成電腦
+				</div>
+			</div>
+
+			<div id="message">
+				<div id="input-age">
+					<h2>☠☠☠完成☠☠☠</h2>
+					<p></p>
+					<span id="msg"></span>
+					年齡：<input type="number" id="age" value=""/>
+					<p></p>
+					<button id="btn">送出</button>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<span>快快樂樂學程式Copyright©️ 2022 by Kong</span>
+	</div>
+
+</body>
+</html>

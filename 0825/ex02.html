@@ -1,0 +1,101 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表單</title>
+	<script src="js/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			/* 選擇轉帳方式時，卡號及有效期限輸入框禁止輸入 */
+
+
+
+
+
+
+			/* 預設勾選童帳單資訊時隱藏填寫欄位，否則顯現 */
+			$(".data").hide("fast");
+
+			/* 判斷是否勾選同帳單資訊 */
+			$("#hideShip").click(function(){
+				if ($("#hideShip").is(":checked")){
+					$(".data").hide("fast");					
+				}else{					
+					$(".data").slideDown();
+				}
+			})
+		});
+	</script>
+</head>
+<body>
+
+	<form id="form1" action="order.php" method="post">
+		<!--
+			元素區塊，被包起來的視為同一個區塊，這個區塊會有邊框
+		-->
+		<fieldset>
+			<legend>帳單資訊</legend> <!--圖例-->
+			<div>
+				<!--
+					label標籤 用來讓表單來控制元件的說明標題
+					一般 label 裡面的 for 對應的是表單元件的id名稱
+					在寫 label 時，可以將 for 省略
+				-->
+				<label for="name">姓名</label>
+				<input type="text" id="name"/>
+			</div>
+
+			<div>
+				<label for="address">地址</label>
+				<input type="text" id="address">
+			</div>
+
+			<div>
+				<span>付款方式</span>
+				<input type="radio" name="payment" value="creditcard" id="creditcard" checked>
+				<label for="credit">信用卡</label>
+
+				<input type="radio" name="payment" value="transfer" id="transfer">
+				<label for="transfer">轉帳</label>
+			</div>
+
+			<div id="credit">
+				<div>
+					<label for="cardNumber">卡號：</label>
+					<input type="text" id="cardNumber"/>
+					<!--
+						attr("disabled", true) 表示不可輸入
+						attr("disabled", false) 表示可輸入
+					-->
+				</div>
+
+				<div>
+					<label for="expiration">有限期限：</label>
+					<input type="text" id="expiration"/>		
+				</div>
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>送貨地址</legend>
+			<div>
+				<input type="checkbox" id="hideShip" checked/> <!--checked 預設是打勾-->
+				<label for="hideShip">同帳單資訊：</label>
+			</div>
+
+			<div class="data">
+				<label for="shipName">姓名：</label>
+				<input type="text" id="shipName"/>
+			</div>
+
+			<div class="data">
+				<label for="shipAddress">地址：</label>
+				<input type="text" id="shipAddress"/>
+			</div>
+		</fieldset>
+	</form>
+
+
+</body>
+</html>

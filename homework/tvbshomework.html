@@ -1,0 +1,657 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="css/tvbs.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#menuList li ul").hide();
+
+			$("#menuList li").hover(
+				function(){
+					$(this).find("ul").slideDown("fast");
+					$(this).find("a:first").addClass("active")
+				}, function(){
+					$(this).find(".submenu").fadeOut("fast");
+					$(this).find("a").removeClass("active");
+				}
+				)
+
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+
+	<div id="wrapper">
+		<div id="banner_div">
+			<div id="banner">
+				<div id="Logo">
+					<img src="https://cc.tvbs.com.tw/portal_production/2022/images/TVBS_logo.svg">
+				</div>
+
+				<div class="search">
+					<input type="text" name="search_input">
+					<button class="search_btn" type="search">
+						<img src="https://cc.tvbs.com.tw/portal_production/2022/images/search_btn.svg">
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="menu">
+			<div id="menu_div">
+				<ul id="menuList">
+					<li><a href="#">TVBS新聞</a></li>
+					<li><a href="#">女人我最大</a></li>
+					<li><a href="#">食尚玩家</a></li>
+					<li><a href="#">健康2.0</a></li>
+					<li><a href="#">地球黃金線</a></li>
+					<li><a href="#">節目</a>
+						<ul class="submenu">
+							<li><a href="#">Focus全球新聞</a></li>
+							<li><a href="#">T觀點</a></li>
+							<li><a href="#">一步一腳印 發現新台灣</a></li>
+							<li><a href="#">中國進行式</a></li>
+							<li><a href="#">少康戰情室</a></li>
+							<li><a href="#">世界翻轉中</a></li>
+							<li><a href="#">看板人物</a></li>
+							<li><a href="#">國民大會</a></li>
+							<li><a href="#">當掌聲響起</a></li>
+						</ul>
+					</li>
+					<li><a href="#">戲劇</a>
+						<ul class="submenu">
+							<li><a href="#">機制校園生活</a></li>
+							<li><a href="#">天堂的微笑</a></li>
+							<li><a href="#">女兵日記</a></li>
+							<li><a href="#">翻牆日記</a></li>
+							<li><a href="#">酸甜滋味</a></li>
+							<li><a href="#">在一起，就好</a></li>
+							<li><a href="#">遺憾拼圖</a></li>
+							<li><a href="#">初戀的情人</a></li>
+							<li><a href="#">16個夏天</a></li>
+							<li><a href="#">戲劇製作部</a></li>
+						</ul>
+					</li>
+
+					<li><a href="#">享時尚</a></li>
+					<li><a href="#">基金會</a></li>
+					<li><a href="#">頻道資訊</a></li>
+					<li><a href="#">更多</a></li>
+					
+				</ul>
+			</div>
+		</div>
+
+		<div id="news_items">
+				<div class="news_items_content">
+					<div id="big_new">
+						<img src="img/news.jpg">
+					</div>
+
+					<div id="small_news">
+						<div class="s_news">
+							<img src="img/spy1.png">
+						</div>
+
+						<div class="s_news">
+							<img src="img/spy2.jpg">
+						</div>
+
+						<div class="s_news">
+							<img src="img/spy3.jpg">
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<!-- 內容 -->
+		<div id="content">			
+
+			<div class="news_section">
+				<div class="section_title">
+					<a>TVBS 新聞</a>
+				</div>
+
+
+				<div class="section_socials">
+					<div class="today_weather">
+						<span href="#">今日天氣：屏東市 24º | 
+							<img src="https://cc.tvbs.com.tw/img/upload/2022/01/19/20220119124540-d528c435.png"></span>
+					</div>
+
+
+					<div class="socials">
+						下載APP | 追蹤我們：
+						<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-FB.svg">
+						<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-YT.svg">
+						<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-Line.svg">
+						<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-IG.svg">
+						<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-twitter.svg">
+					</div>
+				</div>
+
+
+
+
+				<div class="tvbs_content">
+					<div class="tvbs_left_item">
+						<div class="left_item_left">
+							<img src="https://cc.tvbs.com.tw/img/upload/2021/07/26/20210726223844-63d1d176.jpg">
+							<h2>吃完烤肉衝買威力彩！8款人才運旺炸</h2>
+							<h5>吃完烤肉衝買威力彩！8款人才運旺炸</h5>
+							<div class="left_item_time">
+								9分鐘前
+							</div>
+						</div>
+
+						<div class="left_item_right">
+							<img src="https://cc.tvbs.com.tw/img/upload/2022/09/10/20220910124629-65cf65bc.jpg">
+							<h2>出走美國後首度家庭團聚　哈利、梅根將出席女王葬禮</h2>
+							<h5>出走美國後首度家庭團聚　哈利、梅根將出席女王葬禮</h5>
+							<div class="left_item_time">
+								9分鐘前
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div class="tvbs_right_item">
+						<div class="tvbs_right_content">
+							<div class="sub_card_text">
+								<h3>土地公今晚生日！「2生肖」財運神炸　下半年錢賺不停</h3>
+								<div class="popular_time">1天前</div>
+							</div>
+
+							<div class="sub_card_text">
+								<h3>今土地公生日！「8種人」必拜才會旺　挑這時間拜就錯了</h3>
+								<div class="popular_time">1天前</div>
+							</div>
+
+							<div class="sub_card_text">
+								<h3>王彩樺突發文「公開道歉」！全面暫停工作：求大家原諒</h3>
+								<div class="popular_time">1天前</div>
+							</div>
+
+							<div class="sub_card_text">
+								<h3>澎恰恰深夜突宣布「這最後1次」！點名女星喊冤：不是我</h3>
+								<div class="popular_time">1天前</div>
+							</div>
+
+							<div class="sub_card_text">
+								<h3>英靈媒預言「查爾斯只會在位3個月」　將傳位威廉原因曝</h3>
+								<div class="popular_time">1天前</div>
+							</div>
+
+							<div class="sub_card_text">
+								<h3>第一個沒余苑綺中秋！4歲女兒「這幕」引鼻酸　余祥銓擁入懷</h3>
+								<div class="popular_time">1天前</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div id="hot_focus">
+				<div class="hot_inner">
+					<div class="title_block">
+						<div class="hot_issue">					
+							<p>熱門議題</p>
+						</div>
+
+						<div class="all_issue">
+							<a>全部議題</a>
+						</div>
+					</div>
+
+					<div id="hot_news_items">
+
+						<div class="hot_news_item">
+							<img src="https://cc.tvbs.com.tw/img/upload/2022/09/17/20220917085353-fa7fa32f.jpg">
+							<h2>U18世界盃</h2>
+						</div>
+
+						<div class="hot_news_item">
+							<img src="https://cc.tvbs.com.tw/img/upload/2022/09/17/20220917085353-fa7fa32f.jpg">
+							<h2>U18世界盃</h2>
+						</div>
+
+						<div class="hot_news_item">
+							<img src="https://cc.tvbs.com.tw/img/upload/2022/09/17/20220917085353-fa7fa32f.jpg">
+							<h2>U18世界盃</h2>
+						</div>
+
+						<div class="hot_news_item">
+							<img src="https://cc.tvbs.com.tw/img/upload/2022/09/17/20220917085353-fa7fa32f.jpg">
+							<h2>U18世界盃</h2>
+						</div>
+
+					</div>
+				</div>
+			</div>		
+
+
+
+
+			<div class="section_title">
+				<a>精彩節目</a>
+			</div>
+
+			<div id="programme_items">
+
+				<div class="woman_program">
+					<div class="programme_item">
+						<div class="programme_img">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/logo_woman.png">
+						</div>
+
+
+						<div class="socials">
+							下載APP | 購物商城 | 追蹤我們：
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-FB.svg">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-YT.svg">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-Line.svg">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-IG.svg">
+						</div>
+					</div>
+
+					
+					<div class="programme_content">
+						<div class="left_item">
+							<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/16/20220916133222-70d339de.jpg">
+						</div>
+						
+						<div class="right_item">
+							<div class="right_item_content">
+								<a href="#" class="program_card">
+									<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/04/20220904221328-23502e83.jpg">
+									<h3>2022週年慶檔期看這裡！全台百貨公司開跑時間彙整，持續更新中</h3>
+									<p>2022-09-16 18:39:04</p>
+								</a>
+								<a href="#" class="program_card">
+									<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/04/20220904221328-23502e83.jpg">
+									<h3>2022週年慶檔期看這裡！全台百貨公司開跑時間彙整，持續更新中</h3>
+									<p>2022-09-16 18:39:04</p>
+								</a>
+								<a href="#" class="program_card">
+									<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/04/20220904221328-23502e83.jpg">
+									<h3>2022週年慶檔期看這裡！全台百貨公司開跑時間彙整，持續更新中</h3>
+									<p>2022-09-16 18:39:04</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="supertaste_program">
+					<div class="programme_item">
+						<div class="programme_img">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/logo_supertatse.svg">
+						</div>
+
+
+						<div class="socials">
+							下載APP | 購物商城 | 追蹤我們：
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-FB.svg">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-YT.svg">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-Line.svg">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-IG.svg">
+						</div>
+					</div>
+
+					<div class="programme_content">
+						<div class="left_item">
+							<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/16/20220916133222-70d339de.jpg">
+						</div>
+						
+						<div class="right_item">
+							<div class="right_item_content">
+								<a href="#" class="program_card">
+									<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/04/20220904221328-23502e83.jpg">
+									<h3>2022週年慶檔期看這裡！全台百貨公司開跑時間彙整，持續更新中</h3>
+									<p>2022-09-16 18:39:04</p>
+								</a>
+								<a href="#" class="program_card">
+									<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/04/20220904221328-23502e83.jpg">
+									<h3>2022週年慶檔期看這裡！全台百貨公司開跑時間彙整，持續更新中</h3>
+									<p>2022-09-16 18:39:04</p>
+								</a>
+								<a href="#" class="program_card">
+									<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/04/20220904221328-23502e83.jpg">
+									<h3>2022週年慶檔期看這裡！全台百貨公司開跑時間彙整，持續更新中</h3>
+									<p>2022-09-16 18:39:04</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+				<div class="health_program">
+					<div class="programme_item">
+						<div class="programme_img">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/logo_health.svg">
+						</div>
+
+
+						<div class="socials">
+							下載APP | 購物商城 | 追蹤我們：
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-FB.svg">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-YT.svg">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-Line.svg">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-IG.svg">
+						</div>
+					</div>
+
+					<div class="programme_content">
+						<div class="left_item">
+							<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/16/20220916133222-70d339de.jpg">
+						</div>
+						
+						<div class="right_item">
+							<div class="right_item_content">
+								<a href="#" class="program_card">
+									<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/04/20220904221328-23502e83.jpg">
+									<h3>2022週年慶檔期看這裡！全台百貨公司開跑時間彙整，持續更新中</h3>
+									<p>2022-09-16 18:39:04</p>
+								</a>
+								<a href="#" class="program_card">
+									<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/04/20220904221328-23502e83.jpg">
+									<h3>2022週年慶檔期看這裡！全台百貨公司開跑時間彙整，持續更新中</h3>
+									<p>2022-09-16 18:39:04</p>
+								</a>
+								<a href="#" class="program_card">
+									<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/04/20220904221328-23502e83.jpg">
+									<h3>2022週年慶檔期看這裡！全台百貨公司開跑時間彙整，持續更新中</h3>
+									<p>2022-09-16 18:39:04</p>
+								</a>
+							</div>
+						</div>
+					</div>	
+				</div>
+
+				<div class="earth_program">
+					<div class="programme_item">
+						<div class="programme_img">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/logo_car.png">
+						</div>
+
+
+						<div class="socials">
+							下載APP | 購物商城 | 追蹤我們：
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-FB.svg">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-YT.svg">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-Line.svg">
+							<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-IG.svg">
+						</div>
+					</div>
+
+					<div class="programme_content">
+						<div class="left_item">
+							<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/16/20220916133222-70d339de.jpg">
+						</div>
+						
+						<div class="right_item">
+							<div class="right_item_content">
+								<a href="#" class="program_card">
+									<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/04/20220904221328-23502e83.jpg">
+									<h3>2022週年慶檔期看這裡！全台百貨公司開跑時間彙整，持續更新中</h3>
+									<p>2022-09-16 18:39:04</p>
+								</a>
+								<a href="#" class="program_card">
+									<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/04/20220904221328-23502e83.jpg">
+									<h3>2022週年慶檔期看這裡！全台百貨公司開跑時間彙整，持續更新中</h3>
+									<p>2022-09-16 18:39:04</p>
+								</a>
+								<a href="#" class="program_card">
+									<img src="https://cc.tvbs.com.tw/img/program/upload/2022/09/04/20220904221328-23502e83.jpg">
+									<h3>2022週年慶檔期看這裡！全台百貨公司開跑時間彙整，持續更新中</h3>
+									<p>2022-09-16 18:39:04</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="more_programe">
+				<div class="more_title">更多精采節目</div>
+
+				<div class="program_content_div">
+					<div class="program_content_card">
+						<div class="more_program_img">
+							<img src="https://cc.tvbs.com.tw/portal/uploads/PortalProgram/3e3b7d484bb51e5009852eb8f8977451.jpg">							
+						</div>
+
+						<div class="program_content_text">
+							<h2>11點熱吵店</h2>
+							<h5>《11點熱吵店》嗆辣這裡看！熱吵這裡嚐！從兩性角度談最關心、最想發洩的熱門話題！</h5>
+						</div>
+
+						<div class="program_card_socials">
+							<a href="#">
+								<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-FB.svg">
+							</a>
+							<a href="#">
+								<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-YT.svg">
+							</a>
+						</div>
+					</div>
+
+					<div class="program_content_card">
+						<div class="more_program_img">
+							<img src="https://cc.tvbs.com.tw/portal/uploads/PortalProgram/3e3b7d484bb51e5009852eb8f8977451.jpg">							
+						</div>
+
+						<div class="program_content_text">
+							<h2>11點熱吵店</h2>
+							<h5>《11點熱吵店》嗆辣這裡看！熱吵這裡嚐！從兩性角度談最關心、最想發洩的熱門話題！</h5>
+						</div>
+
+						<div class="program_card_socials">
+							<a href="#">
+								<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-FB.svg">
+							</a>
+							<a href="#">
+								<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-YT.svg">
+							</a>
+						</div>
+						
+					</div>
+
+					<div class="program_content_card">
+						<div class="more_program_img">
+							<img src="https://cc.tvbs.com.tw/portal/uploads/PortalProgram/3e3b7d484bb51e5009852eb8f8977451.jpg">							
+						</div>
+
+						<div class="program_content_text">
+							<h2>11點熱吵店</h2>
+							<h5>《11點熱吵店》嗆辣這裡看！熱吵這裡嚐！從兩性角度談最關心、最想發洩的熱門話題！</h5>
+						</div>
+
+						<div class="program_card_socials">
+							<a href="#">
+								<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-FB.svg">
+							</a>
+							<a href="#">
+								<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-YT.svg">
+							</a>
+						</div>
+						
+					</div>
+
+					<div class="program_content_card">
+						<div class="more_program_img">
+							<img src="https://cc.tvbs.com.tw/portal/uploads/PortalProgram/3e3b7d484bb51e5009852eb8f8977451.jpg">							
+						</div>
+
+						<div class="program_content_text">
+							<h2>11點熱吵店</h2>
+							<h5>《11點熱吵店》嗆辣這裡看！熱吵這裡嚐！從兩性角度談最關心、最想發洩的熱門話題！</h5>
+						</div>
+
+						<div class="program_card_socials">
+							<a href="#">
+								<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-FB.svg">
+							</a>
+							<a href="#">
+								<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-YT.svg">
+							</a>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="more_programe_btn">
+					<button>
+						<img src="https://cc.tvbs.com.tw/portal_production/2022/images/arrow-left_gray.svg">
+					</button>
+
+					<button>
+						<img src="https://cc.tvbs.com.tw/portal_production/2022/images/arrow-right_gray.svg">
+					</button>
+				</div>
+			</div>
+
+			<div class="grade_div">
+				<div class="section_title">
+					<a>優質戲劇</a>
+				</div>
+
+				<div class="drama">
+					<div id="drama_Img">
+						<img src="https://cc.tvbs.com.tw/portal/uploads/PortalDrama/ebdf3ec931f0ddced8dc3f91f9a1460f.jpg">
+					</div>
+
+					<div id="drama_content">
+						<div class="drama_text">
+							<h2>機智校園生活</h2>
+							<p>充滿歡笑與淚水的全新八點檔，宥勝、周曉涵領銜主演，和同學展開青春校園故事</p>
+						</div>
+
+						<div class="drama_social">
+							<a href="#">
+								<img src="https://cc.tvbs.com.tw/portal_production/2022/images/icon-FB.svg">
+							</a>
+						</div>
+					</div>
+				</div>
+			
+
+				<div class="more_drama_div">
+					<div class="more_drama_programs">
+						<div class="more_drama_program">
+							<img src="https://cc.tvbs.com.tw/portal/uploads/PortalDrama/dd7ce14fc0786737ed9a9d289edf5d6e.jpg">
+							<h3>天堂的微笑</h3>
+						</div>
+
+						<div class="more_drama_program">
+							<img src="https://cc.tvbs.com.tw/portal/uploads/PortalDrama/dd7ce14fc0786737ed9a9d289edf5d6e.jpg">
+							<h3>天堂的微笑</h3>
+						</div>
+
+						<div class="more_drama_program">
+							<img src="https://cc.tvbs.com.tw/portal/uploads/PortalDrama/dd7ce14fc0786737ed9a9d289edf5d6e.jpg">
+							<h3>天堂的微笑</h3>
+						</div>
+
+						<div class="more_drama_program">
+							<img src="https://cc.tvbs.com.tw/portal/uploads/PortalDrama/dd7ce14fc0786737ed9a9d289edf5d6e.jpg">
+							<h3>天堂的微笑</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="drama_button_div">
+					<button>更多戲劇</button>
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="company_dynamic">
+			<div class="section_title">
+				<a>企業動態</a>
+			</div>
+
+			<div class="company_news_div">
+				<div class="company_news">
+					<p>TVBS再奪數位獎項！獲頒YouTube「年度創意夥伴」</p>
+				</div>
+
+				<div class="company_news">
+					<p>TVBS 28周年台慶公益活動 蘇宗怡吳安琪挽袖捐血獻愛心</p>
+				</div>
+
+				<div class="company_news">
+					<p>科技利看得見！TVBS獲「2021數位轉型頂革獎」肯定</p>
+				</div>
+
+				<div class="company_news">
+					<p><女大>、<食尚>節目數位轉型　榮獲「商業轉型楷模獎」</p>
+				</div>
+			</div>
+	</div>
+
+
+
+
+
+
+	<div id="footer">
+		<div class="footer_content_div">
+			<div class="tvbs_top_footer_div">
+				<div class="tvbs_top_left_div">
+					<img src="https://cc.tvbs.com.tw/portal_production/2022/images/logo_footer.png">
+					<p>您的意見是我們前進的動力，歡迎來信或來電反映</p>
+					<p>
+						意見反應：
+						<a href="service@tvbs.com.tw">service@tvbs.com.tw</a>
+					</p>
+					<p>服務專線：02-2656-1599</p>
+				</div>
+
+				<div class="tvbs_top_right_div">
+					<a href="#">公司介紹</a>
+					<a href="#">人才招募</a>
+					<a href="#">節目表</a>
+					<a href="#">主播專區</a>
+					<a href="#">企業動態</a>
+					<a href="#">更正與澄清</a>
+					<a href="#">新聞自律規範</a>
+					<a href="#">隱私權政策</a>
+					<a href="#">網站使用設定</a>
+					<a href="#">版權宣告</a>
+					<a href="#">業務服務</a>
+					<a href="#">節目版權銷售</a>
+					<a href="#">公開招標</a>
+					<a href="#">頂尖事務所</a>
+					<a href="#">官方聲明</a>
+
+				</div>
+			</div>
+
+			<div class="tvbs_bottom_footer_div">
+				<span>TVBS Copyright©️ 2022 by Kong</span>
+			</div>
+		</div>
+
+
+		
+	</div>
+
+</body>
+</html>

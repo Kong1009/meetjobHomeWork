@@ -1,0 +1,710 @@
+body {
+	margin: 0;
+	height: 100%;
+}
+
+a{
+	text-decoration-line: none;
+
+}
+
+#banner_div{
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#wrapper{
+	min-height: 100%;
+	/* margin-bottom: -100px; */
+}
+
+#Logo{
+	margin-left: 3%;
+	float: left;
+}
+
+#Logo img{
+	margin-top: 25px;
+	margin-left: 7.5%;
+}
+
+.search{
+	float: right;
+	margin-right: 50px;
+}
+
+.search_btn{
+	background: none;
+	border: none;
+
+}
+
+#banner{
+	width: 100%;
+	height: 60px;
+
+}
+
+/* 選單區塊 */
+#menu{
+	width: 100%;
+	height: 45px;
+	background-color: #B653D4;
+}
+
+#menu_div{
+	margin-right: auto;
+	margin-left: auto;
+	width: 1200px;
+}
+
+
+.active{
+	background-color: red;
+}
+
+
+#menuList li{
+	list-style: none;
+	padding: 0;
+
+}
+/*
+#menuList, #menuList ul{
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+	font-size: 20px;
+}
+*/
+
+#menuList li{
+	border-right: 1px solid #ffffff;
+	float: left;
+	width: 90px;
+}
+
+#menuList a{
+	color: #ffffff;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	/* width: 150px; */
+	margin-top: 5px;
+}
+
+#menuList li ul{
+	position: absolute;  /* 位置是絕對位置 */
+	left: auto; /* 對於絕對位置元素, 會依內容需要的寬度來設置 */
+	width: 90px;
+}
+
+.submenu{
+	width: 140px;
+	background-color: #B653D4; 
+}
+
+
+
+/* 大圖 + 小圖新聞 */
+#news_items{
+	background-color: #000000;
+	width: 100%;
+	height: 500px;
+	overflow-y: hidden;
+}
+
+.news_items_content{
+	width: 1200px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#big_new{
+	float: left;
+	width: 870px;
+	height: 100%;
+
+}
+
+#big_new img{
+	width: 100%;
+	height: 100%;
+}
+
+
+#small_news{
+	width: 25%;
+	height: 100%;
+	float: right;
+}
+
+.s_news{
+	height: 34%;
+}
+
+.s_news img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+/* 內容區塊 */
+#content{
+	min-height: 100%;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.news_section{
+	width: 100%;
+	margin-top: 20px;
+	padding-bottom: 35px;
+	height: 500px;
+	margin-bottom: 100px;
+}
+
+.section_title{
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+
+.section_title a{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	border-bottom: 2px solid #000000;
+}
+
+
+.section_socials{
+	width: 100%;
+	height: 60px;
+	border-bottom: 3px solid #F736AC;
+	margin-bottom: 5px;
+	/* background-color: #712FD6; */
+
+
+}
+
+
+
+
+
+
+
+
+.today_weather{
+	float: left;
+	width: 200px;
+	height: 50px;
+	margin-top: 15px;
+	/* background-color: #E7A0FA; */
+}
+
+
+.wonderful_show{
+	border-bottom: 5px solid black;
+	width: 100%;
+	height: 50px;
+	background-color: #FA7141;
+
+}
+
+
+
+.today_weather img{
+	width: 30px;
+	height: 30px;
+}
+
+
+.socials{
+	font-size: 20px;
+
+	float: right;
+
+
+	/* background-color: #E7A0FA; */
+}
+
+
+
+.tvbs_content{
+	height: 500px;
+	width: 100%;
+	
+	/* background-color: #48FABD; */
+}
+
+
+.tvbs_left_item{
+	width: 66%;
+	height: 100%;
+	margin-top: 0.83em;
+	float: left;
+	/* background-color: #8E90DE; */
+}
+
+.left_item_left{
+	width: 48%;
+	float: left;
+	/* background-color: #FFF632; */
+}
+
+.left_item_left img{
+	width: 100%;
+	
+}
+
+.left_item_right{
+	width: 48%;
+	float: right;
+	/* background-color: #FFF632;	*/
+}
+
+.left_item_right img{
+	width: 100%;
+
+}
+
+#left_item_time{
+	background: url(https://cc.tvbs.com.tw/portal_production/2022/images/Icon-clock.svg) center;
+}
+
+
+.tvbs_right_item{
+	width: 32%;
+	height: 100%;
+	float: right;
+	/* background-color: #E0FFA3;*/
+}
+
+.sub_card_text{
+	border-bottom: 2px solid #36040B;
+	padding-bottom: 15px;
+	height: 40px;
+
+}
+
+/* 熱門議題 */
+#hot_focus{
+	width: 100%;
+	height: 280px;
+	padding: 36px 0 30px 0;
+	background-color: #002FC0;
+}
+
+/* 熱門議題區塊 */
+.hot_inner{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+
+}
+
+.title_block{
+	min-height: 50px;
+	margin-bottom: 10px;
+	color: #ffffff;
+}
+
+.title_block p{
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 10px;
+}
+
+.all_issue{
+	margin-top: 20px;
+}
+
+.all_issue a{
+	font-size: 16px;
+
+}
+
+
+
+.hot_issue{
+	float: left;
+}
+
+.all_issue{
+	float: right;
+}
+
+.hot_title{
+	width: 100%;
+	height: 50px;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-bottom: 15px;
+}
+
+
+
+#hot_news_items{
+
+	height: 110px;
+
+	/* background-color: #4F9BF8; */
+
+}
+
+/* 熱門議題 */
+.hot_news_item{
+	width: 23%;
+	height: 148px;
+	margin-right: 24px;
+	background-color: #BA4FF8;
+	float: left;
+	color: #ffffff;
+}
+
+.hot_news_item img{
+	width: 100%;
+	height: 100%;
+}
+
+
+#programme_items{
+	width: 100%;
+	min-height: 500px;
+	padding-bottom: 37px;
+}
+
+.programme_item{
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid #000;
+	/* background-color: #EC3DF6; */
+}
+
+
+.woman_program{
+	padding-bottom: 20px;
+}
+
+.supertaste_program{
+	padding-bottom: 20px;
+}
+
+.health_program{
+	padding-bottom: 20px;
+}
+
+.programme_content{
+	width: 100%;
+	min-height: 300px;
+	/* background-color: #F5A9C7; */
+}
+
+.programme_img{
+	width: 200px;
+	float: left;
+
+}
+
+.programme_img img{
+	width: 100%;
+	height: 100%;
+}
+
+.left_item{
+	width: 35%;
+	height: 300px;
+	background-color: #C6FF33;
+	float: left;
+}
+
+.left_item img{
+	width: 100%;
+	height: 100%;
+}
+
+.right_item{
+	width: 65%;
+	min-height: 200px;
+	/* background-color: #938EDE; */
+	float: right;
+}
+
+.right_item_content{
+	width: 100%;
+	height: 150px
+
+}
+
+.program_card{
+	width: 29%;
+	float: left;
+	margin-left: 30px;
+
+}
+
+.right_item_content img{
+	width: 100%;
+	height: 100%;
+}
+
+/* 更多精采節目區塊 */
+#more_programe{
+	width: 100%;
+	height: 390px;
+	background-color: #1E1DE0;
+	padding: 48px 0 63px 0;
+}
+
+.more_title{
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+
+.program_content_div{
+	width: 100%;
+	height: 355px;
+	background-color: red;
+}
+
+.program_content_card{
+	width: 240px;
+	height: 99%;
+	border: 1px solid yellow;
+	border-radius: 10px;
+	float: left;
+	margin-right: 30px;
+}
+
+.more_program_img{
+	width: 100%;
+	height: 145px;
+}
+
+.more_program_img img{
+	width: 100%;
+	height: 100%;
+}
+
+.program_content_text{
+	padding: 5px 12px 10px 12px;
+}
+
+.program_content_text h2{
+	margin-top: 3px;
+}
+
+.program_card_socials{
+	float: right;
+}
+
+.more_programe_btn{
+	height: 50px;
+	float: right;
+	background-color: green;
+}
+
+.grade_div{
+	width: 100%;
+	height: 900px;
+	/* background-color: green;*/
+}
+
+.drama{
+	width: 100%;
+	min-height: 400px;
+	/* background-color: #F5A9C7;*/
+}
+
+
+#drama_Img{
+	width: 50%;
+	height: 400px;
+
+	float: left;
+	background-color: #EBB757; 
+}
+
+#drama_Img img{
+	width: 100%;
+	height: 100%;
+}
+
+#drama_content{
+	width: 48%;
+	height: 400px;
+	float: right;
+	background-color: #DBFFA8; 
+}
+
+.drama_text{
+	height: 85%;
+}
+
+.drama_social{
+	float: right;
+}
+
+#drama_content p{
+	font-size: 18px;
+}
+
+
+/* 更多節目內容 */
+.more_drama_div{
+	width: 100%;
+	min-height: 300px;
+	padding-top: 30px;
+	/* background-color: #FF3C4B;*/
+}
+
+.more_drama_programs{
+	width: 100%;
+	height: 200px;
+	background-color: orange;
+}
+
+.more_drama_program{
+	width: 23%;
+	height: 80%;
+	margin-right: 2%;
+	float: left;
+
+}
+
+.more_drama_program img{
+	width: 100%;
+	height: 100%;
+}
+
+.more_drama_program h3{
+	margin-top: 10px
+}
+
+.drama_button_div{
+	margin-left: 42%;
+}
+
+.drama_button_div button{
+	padding: 12px 73px 12px 55px;
+	background: url(https://cc.tvbs.com.tw/portal_production/2022/images/arrow-down_black.svg) no-repeat;
+	background-position: 140px center;
+	border: 1px solid #000;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 28px;
+}	
+
+
+/* 企業動態 */
+#company_dynamic{
+	width: 100%;
+	height: 410px;
+	background: url(https://cc.tvbs.com.tw/portal_production/2022/images/post-banner.png) center no-repeat;
+	background-size: cover;
+	padding-top: 32px;
+
+}
+
+.company_news_div{
+	padding-top: 50px;
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+
+.company_news{
+	width: 200px;
+	height: 200px;
+	background-color: rgba(0, 0, 0, 0.4);
+	float: left;
+	margin-left: 8%;
+}
+
+.company_news p{
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 20px;
+	/* color: #ffffff; */
+	top: 50%;
+	color: #ffffff;
+}
+
+
+/* 底部 */
+#footer{
+	width: 100%;
+	height: 380px;
+	background-color: #000000;
+	color: #ffffff;
+	text-align: center;
+	clear: both;
+
+}
+
+
+.footer_content_div{
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.tvbs_top_footer_div{
+	width: 100%;
+	height: 250px;
+	background-color: #37A5FA;
+	border-bottom: 1px solid #000;
+}
+
+.tvbs_top_left_div{
+	padding: 60px 0 20px 0;
+	width: 40%;
+	float: left;
+	text-align: left;
+
+}
+
+.tvbs_top_left_div p:first-of-type{
+	margin: 10px 0;
+}
+
+.tvbs_top_left_div p{
+	margin: 0;
+}
+
+.tvbs_top_right_div{
+	width: 60%;
+	/* padding: 60px 0 20px 0;*/
+	float: right;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	column-gap: 90px;
+}
+
+.tvbs_top_right_div a{
+	color: #ffffff;
+}
+
+.tvbs_bottom_footer_div{
+	width: 100%;
+	height: 250px;
+	height: 50px;
+	background-color: #FA522A;
+}

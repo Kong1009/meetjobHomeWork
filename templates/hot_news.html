@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block Title %}
+最新消息
+{% endblock %}
+
+{% block content %}
+    <!-- Pricing Plan Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">最新消息</h5>
+                
+            </div>
+            
+            <div class="owl-carousel price-carousel position-relative" style="padding: 0 45px 45px 45px;">
+                {% for news in hotnews %}
+                <div class="bg-light rounded text-center">
+                    
+                    <div class="position-relative">
+                        <img class="img-fluid rounded-top" src="{{ url_for('static', filename='images/price-1.jpg') }}" alt="">
+                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                            <h3 class="text-primary">{{ news[0] }}</h3>
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>49<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="text-center py-5">
+                        <p>{{ news[1] }}</p>
+                        <!--
+                        <p>Highly Experienced Doctors</p>
+                        <p>Highest Success Rate</p>
+                        <p>Telephone Service</p>
+                    
+                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
+                        -->
+                    </div>
+
+                </div>
+                {% endfor %}
+
+            </div>
+            
+        </div>
+    </div>
+    <!-- Pricing Plan End -->
+
+
+    <!-- Appointment Start -->
+    <div class="container-fluid bg-primary my-5 py-5">
+        <div class="container py-5">
+            <div class="row gx-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">預約項目</h5>
+                        <h1 class="display-4">為您的汽、機車進行預約</h1>
+                    </div>
+                    <p class="text-white mb-5">為您的愛車進行預約吧!!!</p>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-white text-center rounded p-5">
+                        <h1 class="mb-4">預約</h1>
+                        <form action="/reserve-item" method="post">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select bg-light border-0" style="height: 55px;" name="item">
+                                        <option selected>選擇預約項目</option>
+                                        {% for row in items %}
+                                        <option value="{{ row[0] }}">{{ row[1] }}</option>
+                                        {% endfor %}
+                                        
+                                    </select>
+                                </div>
+                                <!--
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select bg-light border-0" style="height: 55px;">
+                                        <option selected>專員選擇</option>
+                                        <option value="1">專員 1</option>
+                                        <option value="2">專員 2</option>
+                                        <option value="3">專員 3</option>
+                                    </select>
+                                </div>
+                            -->
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control bg-light border-0" name='customername' placeholder="姓名" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control bg-light border-0" name="email" placeholder="電子郵件" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="date" name='reserve-date' id="date" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control bg-light border-0 datetimepicker-input"
+                                            placeholder="預約日期" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="time" name="reserve-time" id="time" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control bg-light border-0 datetimepicker-input"
+                                            placeholder="預約時間" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">預約</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+{% endblock%}

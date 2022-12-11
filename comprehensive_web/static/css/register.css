@@ -1,0 +1,52 @@
+h1{
+	margin-left: 10%;
+}
+
+.register-content{
+	display: flex;
+	width: 1200px;
+	margin: 0 auto;
+
+}
+
+.register-from{
+	width: 350px;
+	/*margin:0 auto;*/
+}
+
+.register-img{
+	width: 160px;
+}
+
+.register-img img{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.re-form{
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.re-form label{
+	padding: 0 15px;
+}
+
+
+
+.btn_submit{
+	width: 100px;
+	font-size: 20px;
+	font-weight: bold;
+	border: transparent;
+	padding: 0.5em 1em;
+	color: #fff;
+	background-color: #000;
+	border-radius: 10px;
+
+}
+
+.btn_submit:hover{
+	color: red;
+}

@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	我的動畫
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/static/css/cartoon.css">
+{% endblock %}
+
+{% block content %}
+
+	<div class="cartoon-title">
+		<h1>所有電影</h1>
+
+		
+		<div class="content-filter-div">
+
+			<form action="" method="get">
+				<div>
+					<input type="text" name="get-title" class="search-title">
+					<input type="submit" value="查詢">
+				</div>
+
+			</form>
+
+			<div>
+				<select>
+					<option>預設</option>
+					<option>人氣</option>
+					<option>年分</option>
+				</select>
+			</div>
+		</div>
+		
+
+	</div>
+	
+	<div class="cartoon">
+		{% for data in movies %}
+		
+			<a href="{{ data.link }}">
+				<div class="cartoon-img">
+					<img src="{{ data.img_link }}">
+				</div>
+
+				<div class="cartoon-text">
+					<p>{{ data.title }}</p>
+					<p>人氣：{{ data.evaluation }}萬</p>
+					<p>{{ data.date }}</p>
+				</div>
+
+			</a>
+		
+		{% endfor %}
+	</div>
+
+	<div class="up-down">
+		{% if movies.has_previous %}
+		<a href="?page={{ movies.previous_page_number }}">上一頁</a>
+
+		{% endif %}
+
+		{{ all_page }}
+
+		{% if movies.has_next %}
+		<a href="?page={{ movies.next_page_number}}">下一頁</a>
+		{% endif %}
+
+		<br><br>
+		{{ movies.number }} of {{ movies.paginator.num_pages }}
+		{{ movies.page }}
+	</div>
+
+
+
+{% endblock %}

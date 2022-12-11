@@ -1,0 +1,92 @@
+body{
+	font-family: Arial, '微軟正黑體';
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: url(https://i2.bahamut.com.tw/html_bg.gif);
+	/*background: no-repeat;	*/
+	
+}
+
+#header{
+	width: 80%;
+	margin:0 auto;
+	height: 100px;
+
+}
+
+#logo{
+	display: inline-block;
+	margin: 22px 0;
+	width: 120px
+}
+
+#logo img{
+	width: 100%;
+}
+
+/*#menu{
+	width: 100%;
+	height: 100px;
+	background-color: #2F45EB;
+
+}	*/
+
+nav{
+	background-color: #2F45EB;
+	width: 100%;
+	height: 50px;
+	color: #fff;
+}
+
+
+#menu-list{
+	width: 1200px;
+	height: 50px;
+	margin:0 auto;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-around;
+}
+
+#menu-list a{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: bold;
+	color: #fff;
+}
+
+#menu-list a:hover{
+	background: #F50F00;
+	border-radius: 10px;
+
+}
+
+#content{
+	width: 100%;
+	min-height: 100%;
+	padding: 60px 0;
+}
+
+
+
+
+#footer{
+	/*position: absolute;*/
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+
+}
+
+#footer span{
+	color: #fff;
+	font-weight: bold;
+	line-height: 50px;
+
+}

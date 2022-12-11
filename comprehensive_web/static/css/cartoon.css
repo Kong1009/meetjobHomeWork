@@ -1,0 +1,65 @@
+
+.cartoon-title{
+	display: flex;
+	width: 80%;
+	margin:0 auto;
+	justify-content: space-between;
+	/*align-content: center;*/
+	align-items: center;
+}
+
+
+
+.search-title{
+	height: 30px;
+}
+
+
+.cartoon{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	/*align-items: center;*/
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	flex-direction: row;
+
+}
+
+
+
+.cartoon a{
+	box-shadow: red;
+	margin: 20px 20px;
+	text-align: center;
+	width: 240px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	/*border: 2px solid red;*/
+	border-radius: 25px;
+	overflow: hidden;
+	background: #000;
+	
+}
+
+.cartoon-img{
+	/*width: 250px;*/
+	/*position: relative;*/
+}
+
+.cartoon-img img{
+	width: 100%;
+	/*position: absolute;*/
+
+}
+
+.up-down{
+	display: flex;
+	width: 500px;
+	margin:0 auto;
+	justify-content: space-between;
+
+}

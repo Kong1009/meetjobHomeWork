@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}
+會員註冊
+{% endblock %}
+
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="/static/css/register.css">
+{% endblock %}
+
+{% block js %}
+<script>
+	function checkPwd(){
+		var p = document.getElementsByName("pwd")[0].value;
+		var p2 = document.getElementsByName("checkpwd")[0].value;
+
+		if (p == p2){
+			return true;
+		}else{
+			alert("密碼確認錯誤，請重新確認")
+			return false;
+		}
+	}
+</script>
+{% endblock %}
+
+
+{% block content %}
+	
+
+	<strong>{{ msg }}</strong>
+	<h1>會員註冊</h1>
+
+
+	<form action="" method="post" class="register-content" onsubmit="return checkPwd()">
+		{% csrf_token %}
+		<div class="register-from">
+				
+			<div class="re-form">
+				<label>會員帳號</label>
+				<input type="Email" name="account" placeholder="Email" required>
+			</div>
+
+			<div class="re-form">
+				<label>使用者名稱</label>
+				<input type="text" name="username" placeholder="使用者名稱" required>
+			</div>		
+
+			<div class="re-form">
+				<label>密碼</label>
+				<input type="password" name="pwd" placeholder="密碼" required>
+			</div>
+
+			<div class="re-form">
+				<label>確認密碼</label>
+				<input type="password" name="checkpwd" placeholder="確認密碼" required>
+			</div>
+
+			<div class="re-form">
+				<label>出生年月日</label>
+				<input type="date" name="birthday" required>
+			</div>
+
+			<div class="re-form">
+				<label>性別</label>
+				<input type="radio" name="sex" value="男性" checked="">男性
+				<input type="radio" name="sex" value="女性">女性
+			</div>
+
+			<div class="re-form">
+				<button submit="submit" class="btn_submit">註冊</button>	
+				
+			</div>
+		</div>
+
+
+		<div class="register-img">
+			<img src="https://i.pinimg.com/564x/5a/d8/a5/5ad8a5b4305c3238c02a348064d983df.jpg">
+		</div>
+	</form>
+{% endblock %}

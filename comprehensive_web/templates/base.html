@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>
+		{% block title %}
+
+		{% endblock %}
+	</title>
+
+	{% block css %}
+
+	{% endblock %}
+
+	{% block js %}
+
+	{% endblock %}
+
+	<link rel="stylesheet" href="/static/css/base.css">
+</head>
+<body>
+
+	<div id="header">
+		<div id="logo">
+			<a href="/"><img src="https://i2.bahamut.com.tw/anime/crazy_logo.png"></a>
+		</div>
+	</div>
+
+	<!-- <div id="menu">
+
+		
+	</div> -->
+		
+
+	<nav>
+		<ul id="menu-list">
+			<a href="/all_cartoon"><li>動漫特區</li></a>
+			<a href="/all_movie"><li>電影特區</li></a>
+			<a href="#"><li>電影特區</li></a>
+			<a href="#"><li>電影特區</li></a>
+			<a href="#"><li>電影特區</li></a>
+			<a href="#"><li>電影特區</li></a>
+			<a href="#"><li>電影特區</li></a>
+		</ul>
+	</nav>
+	
+	<div id="content">
+	{% block content %}
+
+	{% endblock %}
+	</div>
+	
+
+	<div id="footer">
+		<span>COPYRIGHT ©2022 KONG DESGIN.	ALL RIGHTS RESERVED.</span>
+	</div>
+</body>
+</html>
